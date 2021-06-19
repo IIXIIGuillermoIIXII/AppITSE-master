@@ -7,14 +7,14 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.labawsrh.aws.introscreen.firstFragment"
+        android:name="com.labawsrh.aws.introscreen.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" />
     <fragment
         android:id="@+id/secondFrament"
-        android:name="com.labawsrh.aws.introscreen.secondFrament"
+        android:name="com.labawsrh.aws.introscreen.SecondFrament"
         android:label="fragment_second_frament"
-        tools:layout="@layout/fragment_second_frament" />
+        tools:layout="@layout/fragment_second" />
     <fragment
         android:id="@+id/thridFragment"
         android:name="com.labawsrh.aws.introscreen.ThridFragment"

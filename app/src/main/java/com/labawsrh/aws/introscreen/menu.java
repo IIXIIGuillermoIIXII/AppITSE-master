@@ -2,10 +2,11 @@ package com.labawsrh.aws.introscreen;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
@@ -14,52 +15,62 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 
 public class menu extends AppCompatActivity {
 
-    private TextView TEX1;
-    private BottomNavigationView ButtomNav;
+    FirstFragment FRAG1 = new FirstFragment();
+    SecondFrament FRAG2 = new SecondFrament();
+    ThridFragment FRAG3 = new ThridFragment();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
 
-
-        ButtomNav = findViewById(R.id.bottomNavigationView);
-        ButtomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull  MenuItem menuItem) {
-                if(menuItem.getItemId() == R.id.firstFragment){
-
-                    YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
-                    getLifecycle().addObserver(youTubePlayerView);
-
-                    youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
-                        @Override
-                        public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                            String videoId = "S0Q4gqBUs7c";
-                            youTubePlayer.loadVideo(videoId, 0);
-                        }
-                    });
-
-                }else if(menuItem.getItemId() == R.id.secondFrament){
-
-
-
-                }else if (menuItem.getItemId() == R.id.thridFragment){
-
-
-                }
-
-
-                return true;
-            }
-        });
-
-
-
+        BottomNavigationView navigationView = findViewById(R.id.bottomNavigationView);
+        navigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        loadFragment(FRAG1);
 
 
     }
+
+    private  final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
+
+            switch (Item.getItemId()){
+
+                case R.id.firstFragment:
+                    loadFragment(FRAG1);
+                    return  true;
+                case R.id.secondFrament:
+                    loadFragment(FRAG2);
+                    return true;
+                case R.id.thridFragment:Fragment:
+                    loadFragment(FRAG3);
+                    return  true;
+
+            }
+            return false;
+        }
+    };
+
+
+    public  void loadFragment (Fragment fragment){
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentContainerView,fragment);
+        transaction.commit();
+
+
+    }
+
+
+
 }
+
+//CODIGO PARA AGREGAR VIDEOS DE YOUTUBE
+/*
+
+*/
 
 
 

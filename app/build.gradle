@@ -4,7 +4,7 @@ android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.labawsrh.aws.introscreen"
-        minSdkVersion 17
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -33,6 +33,7 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'com.github.ahmedshaban1:EasySlider:1.0.0'
 
 
 }

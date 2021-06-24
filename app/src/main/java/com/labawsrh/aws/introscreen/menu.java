@@ -24,11 +24,9 @@ public class menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-
         BottomNavigationView navigationView = findViewById(R.id.bottomNavigationView);
         navigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         loadFragment(FRAG1);
-
 
     }
 
@@ -67,10 +65,6 @@ public class menu extends AppCompatActivity {
 
 }
 
-//CODIGO PARA AGREGAR VIDEOS DE YOUTUBE
-/*
-
-*/
 
 
 

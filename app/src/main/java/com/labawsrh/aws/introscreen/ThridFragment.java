@@ -30,18 +30,48 @@ public class ThridFragment extends Fragment {
 
         View componentFragment = inflater.inflate(R.layout.fragment_thrid, container, false);
 
-
-        YouTubePlayerView youTubePlayerView = componentFragment.findViewById(R.id.youtube_player_view);
+        YouTubePlayerView youTubePlayerView = componentFragment.findViewById(R.id.youtube_player_view1);
         getLifecycle().addObserver(youTubePlayerView);
 
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "aE4c97ulcbg";
+                String videoId = "lxoqZDFxbsE";
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });
 
+        YouTubePlayerView youTubePlayerView1 = componentFragment.findViewById(R.id.youtube_player_view2);
+        getLifecycle().addObserver(youTubePlayerView1);
+
+        youTubePlayerView1.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+            @Override
+            public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                String videoId = "cdnt5-qsRV8";
+                youTubePlayer.loadVideo(videoId, 0);
+            }
+        });
+
+        YouTubePlayerView youTubePlayerView2 = componentFragment.findViewById(R.id.youtube_player_view3);
+        getLifecycle().addObserver(youTubePlayerView2);
+
+        youTubePlayerView2.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+            @Override
+            public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                String videoId = "dAHoQq9iWsk";
+                youTubePlayer.loadVideo(videoId, 0);
+            }
+        });
+        YouTubePlayerView youTubePlayerView4 = componentFragment.findViewById(R.id.youtube_player_view4);
+        getLifecycle().addObserver(youTubePlayerView4);
+
+        youTubePlayerView4.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+            @Override
+            public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                String videoId = "hCOarSIOJ6c";
+                youTubePlayer.loadVideo(videoId, 0);
+            }
+        });
 
         return componentFragment;
     }

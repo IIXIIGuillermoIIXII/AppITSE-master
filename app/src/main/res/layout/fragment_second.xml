@@ -8,4 +8,14 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="25dp"
+        android:text="HOLA MUNDO"
+        android:gravity="center_vertical|center_horizontal"
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

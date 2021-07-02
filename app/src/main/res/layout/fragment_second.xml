@@ -9,13 +9,11 @@
     <!-- TODO: Update blank fragment layout -->
 
 
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="25dp"
-        android:text="HOLA MUNDO"
-        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/listview"
+        tools:listitem="@layout/list_item"/>
 
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,7 @@
     <!-- TODO: Update blank fragment layout -->
 
 
+
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view1"
             android:layout_width="match_parent"
@@ -49,14 +50,6 @@
     </LinearLayout>
 
 
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-        android:id="@+id/youtube_player_view4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:autoPlay="false"
-        app:videoId="hCOarSIOJ6c" >
-
-    </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
 
 

@@ -3,26 +3,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".FirstFragment">
 
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="57dp"
-        tools:ignore="MissingConstraints">
-
-        <ahmed.easyslider.EasySlider
-            android:id="@+id/SliderId"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginTop="10dp"
-            tools:ignore="MissingConstraints"></ahmed.easyslider.EasySlider>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TECNM CAMPUS ESCÁRCEGA"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="25dp"
+                android:textColor="#801D1D"
+                android:textStyle="bold"
+                >
+            </TextView>
 
 
-    </LinearLayout>
+            <ahmed.easyslider.EasySlider
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/slider1">
+
+            </ahmed.easyslider.EasySlider>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/logoisc"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" 
+                android:text="■ RESPONSABLE DIVISIÓN"
+                android:textColor="#881C1C"
+                android:gravity="center_vertical|center_horizontal"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="MGTI. Juan Carlos Rivera Tapia \n E-mail: jcrivera@itsescarcega.edu.mx"
+                android:gravity="center_horizontal|center_vertical"
+                android:selectAllOnFocus="true"
+                >
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="560dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/sistemas">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="■ OPCIONES DE TITULACIÓN "
+                >
+            </TextView>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="true"
+                app:videoId="_NVEP93UfaI" >
+
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+
+            <Button
+                android:id="@+id/buttom1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="#872727"
+                android:clickable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="°Documentos"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp">
+            </Button>
+        </LinearLayout>
+       </ScrollView>
+
+
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

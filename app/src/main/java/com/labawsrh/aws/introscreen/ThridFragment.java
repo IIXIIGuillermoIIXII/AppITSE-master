@@ -62,16 +62,7 @@ public class ThridFragment extends Fragment {
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });
-        YouTubePlayerView youTubePlayerView4 = componentFragment.findViewById(R.id.youtube_player_view4);
-        getLifecycle().addObserver(youTubePlayerView4);
 
-        youTubePlayerView4.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
-            @Override
-            public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "hCOarSIOJ6c";
-                youTubePlayer.loadVideo(videoId, 0);
-            }
-        });
 
         return componentFragment;
     }

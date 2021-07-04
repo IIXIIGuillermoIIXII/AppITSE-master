@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
@@ -25,13 +27,18 @@ import java.util.List;
 
 import ahmed.easyslider.EasySlider;
 import ahmed.easyslider.SliderItem;
-
+import uk.co.senab.photoview.PhotoView;
+import uk.co.senab.photoview.PhotoViewAttacher;
 
 
 public class FirstFragment extends Fragment {
     EasySlider easySlider;
     private Button btnlink;
-    private String url;
+    private String url,url2;
+    ImageView imageView;
+    PhotoViewAttacher photoViewAttacher;
+    TextView correo;
+    private Object PhotoViewAttacher;
 
     public FirstFragment() {
 
@@ -80,9 +87,24 @@ public class FirstFragment extends Fragment {
         });
 
 
+        imageView = (ImageView) componentFrag.findViewById(R.id.portada);
+        photoViewAttacher = new PhotoViewAttacher(imageView);
+
+        correo = componentFrag.findViewById(R.id.correo);
+        url2="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=jcrivera@itsescarcega.edu.mx";
+
+                correo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Uri uri2 = Uri.parse(url2);
+                        Intent intent2 = new Intent(Intent.ACTION_VIEW,uri2);
+                        startActivity(intent2);
+                    }
+                });
 
 
 
         return componentFrag;
     }
 }
+

@@ -67,9 +67,11 @@ public class IntroActivity extends AppCompatActivity {
         // fill list screen
 
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Android Studio","Android Studio es el entorno de desarrollo integrado (IDE) oficial para el desarrollo de apps para Android y está basado en IntelliJ IDEA.",R.drawable.img1));
+        mList.add(new ScreenItem("Aplicaciones Moviles","Una aplicación móvil, también llamada app móvil, es un tipo de aplicación diseñada para ejecutarse en un dispositivo móvil, que puede ser un teléfono inteligente o una tableta..",R.drawable.img1));
         mList.add(new ScreenItem("Desarrollo Web","Construir y mantener sitios web; es el trabajo que tiene lugar en un segundo plano y que permite que una web tenga una apariencia impecable, un funcionamiento rápido y un buen desempeño para permitir la mejor experiencia de usuario",R.drawable.img2));
-        mList.add(new ScreenItem("Arquitectura","La arquitectura de computadoras es el diseño conceptual y la estructura operacional fundamental de un sistema de computadoras.",R.drawable.img3));
+        mList.add(new ScreenItem("Arquitectura Software ","La arquitectura de computadoras es el diseño conceptual y la estructura operacional fundamental de un sistema de computadoras.",R.drawable.img3));
+        mList.add(new ScreenItem("Base de datos","Programa capaz de almacenar gran cantidad de datos, relacionados y estructurados, que pueden ser consultados rápidamente de acuerdo con las características selectivas que se deseen.",R.drawable.imag4));
+
 
         // setup viewpager
         screenPager =findViewById(R.id.screen_viewpager);

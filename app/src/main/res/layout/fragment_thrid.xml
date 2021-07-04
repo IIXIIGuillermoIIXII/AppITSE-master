@@ -14,7 +14,7 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="250dp"
             app:autoPlay="true"
             app:videoId="lxoqZDFxbsE" >
 
@@ -48,6 +48,15 @@
 
 
     </LinearLayout>
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view5"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:autoPlay="true"
+        app:videoId="JpxXXwHIUIg" >
+
+    </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
 
 
 

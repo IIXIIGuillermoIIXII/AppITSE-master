@@ -7,7 +7,7 @@
             android:icon="@drawable/ic_home" />
         <item
             android:id="@+id/secondFrament"
-            android:title="Curso"
+            android:title="Galeria"
             android:icon="@drawable/ic_image" />
         <item
             android:id="@+id/thridFragment"

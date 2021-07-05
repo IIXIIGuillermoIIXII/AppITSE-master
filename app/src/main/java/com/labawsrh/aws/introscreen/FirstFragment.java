@@ -54,9 +54,9 @@ public class FirstFragment extends Fragment {
 
         easySlider= componentFrag.findViewById(R.id.slider1);
         List<SliderItem> easySliders = new ArrayList<>();
-        easySliders.add(new SliderItem("ITEM1",R.drawable.slider1));
-        easySliders.add(new SliderItem("ITEM2",R.drawable.slider2));
-        easySliders.add(new SliderItem("ITEM3",R.drawable.slider3));
+        easySliders.add(new SliderItem("ITSE",R.drawable.slider1));
+        easySliders.add(new SliderItem("Cambios Internacionales",R.drawable.slider2));
+        easySliders.add(new SliderItem("ITSE",R.drawable.slider3));
 
         easySlider.setTimer(1000);
 

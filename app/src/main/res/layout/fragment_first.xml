@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp" 
                 android:text="■ RESPONSABLE DIVISIÓN"
-                android:textColor="#FFFFFF"
+                android:textColor="#9A4F4F"
                 android:gravity="center_vertical|center_horizontal"
                 >
 
@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:textStyle="italic"
-                android:textColor="#FFFFFF"
+                android:textColor="#631212"
                 android:textIsSelectable="true"
                 android:text="MGTI. Juan Carlos Rivera Tapia \n E-mail: jcrivera@itsescarcega.edu.mx"
                 android:gravity="center_horizontal|center_vertical"
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:textSize="15dp"
-                android:textColor="#000000"
+                android:textColor="#731C1C"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="■ OPCIONES DE TITULACIÓN "
                 >
